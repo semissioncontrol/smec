@@ -27,7 +27,7 @@ then
     cd /etc/smec/src/
     mkdir ${CATEGORY}/${PACKAGE}
     cd ${CATEGORY}/${PACKAGE}
-    REPO=../../../../../repos/${CATEGORY}/${PACKAGE} VERSION=2.9 bash ../../../repos/${CATEGORY}/${PACKAGE}-${VERSION}
+    REPO=../../../../../repos/${CATEGORY}/${PACKAGE} VERSION=2.9 bash ../../../repos/${CATEGORY}/${PACKAGE}/${PACKAGE}-${VERSION}.smec
     # todo here ^: fix the many ..'s in REPO, and a globally working VERSION var
   else
     echo "$2 not found."
